@@ -134,7 +134,8 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libqcompostprocbundle \
-    libldacBT_bco
+    libldacBT_bco \
+    sound_trigger.primary.msm8953:32
 
 # Audio features
 PRODUCT_PACKAGES += \
