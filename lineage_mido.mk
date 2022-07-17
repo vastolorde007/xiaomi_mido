@@ -33,6 +33,10 @@ PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 BOARD_VENDOR := Xiaomi
 
+#RiceDroid Officical Flag
+RICE_DEVICE := mido
+RICE_OFFICIAL := true
+
 #RiceDroid Flags
 RICE_MAINTAINER := Vastolorde
 WITH_GAPPS := false
