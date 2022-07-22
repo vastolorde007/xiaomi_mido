@@ -122,6 +122,9 @@ DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_mido
 TARGET_RECOVERY_DEVICE_MODULES := libinit_mido
 
+# HWUI
+HWUI_COMPILE_FOR_PERF := true
+
 # Media
 USE_DEVICE_SPECIFIC_MEDIA := true
 DEVICE_SPECIFIC_MEDIA_PATH := $(DEVICE_PATH)/qcom-caf/media
