@@ -80,6 +80,9 @@ drm.service.enabled=true
 # Frp
 ro.frp.pst=/dev/block/bootdevice/by-name/config
 
+# Phantom process monitoring
+sys.fflag.override.settings_enable_monitor_phantom_procs=false
+
 #Enable Pre-Rendering
 PRODUCT_PROPERTY_OVERRIDES += \
    ro.vendor.perf.scroll_opt=true
