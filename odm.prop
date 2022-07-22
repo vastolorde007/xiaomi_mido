@@ -4,3 +4,6 @@
 
 # Qualcomm
 ro.vendor.qti.va_odm.support=1
+
+# Audio
+persist.vendor.audio.voicecall.speaker.stereo=false
