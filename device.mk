@@ -434,7 +434,9 @@ PRODUCT_COPY_FILES += \
     
 # VNDK
 PRODUCT_PACKAGES += \
-    libstdc++.vendor
+    libstdc++.vendor \
+    libshims_gxfpd \
+    libcamshim \
 
 # Wifi
 PRODUCT_PACKAGES += \
