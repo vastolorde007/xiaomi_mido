@@ -22,4 +22,7 @@ rm -rf vendor/qcom/opensource/fm-commonsys && git clone https://github.com/Linea
 rm -rf packages/apps/FMRadio && git clone https://github.com/LineageOS/android_packages_apps_FMRadio.git packages/apps/FMRadio
 rm -rf vendor/qcom/opensource/libfmjni && git clone https://github.com/LineageOS/android_vendor_qcom_opensource_libfmjni.git vendor/qcom/opensource/libfmjni
 
+echo 'Cloning lineage OS Gallery'
+rm -rf packages/apps/Gallery && git clone https://github.com/LineageOS/android_packages_apps_Gallery2.git -b lineage-20.0 packages/apps/Gallery2
+
 echo 'Completed cloning your trees, proceed with lunch Command'

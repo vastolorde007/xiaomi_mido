@@ -217,6 +217,10 @@ PRODUCT_PACKAGES += \
     libfmjni \
     fm-commonsys 
 
+#Gallery2
+PRODUCT_PACKAGES += \
+   Gallery2 
+
 # Fwk-detect
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
