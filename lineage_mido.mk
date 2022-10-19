@@ -39,7 +39,9 @@ RICE_OFFICIAL := true
 
 #RiceDroid Flags
 RICE_MAINTAINER := Vastolorde
-#WITH_GMS := true
+WITH_GMS := true
+#TARGET_CORE_GMS := true
+#TARGET_CORE_GMS_EXTRAS := true
 TARGET_ENABLE_BLUR := true
 TARGET_HAS_UDFPS := false
 TARGET_SUPPORTS_QUICK_TAP := false
