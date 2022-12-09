@@ -9,6 +9,8 @@ import android.view.MenuItem;
 
 import org.lineageos.settings.R;
 import org.lineageos.settings.Controller;
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
+import com.android.settingslib.widget.R;
 
 public class KcalSettingsActivity extends Activity implements Controller {
 
