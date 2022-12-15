@@ -6,7 +6,7 @@ rm -rf vendor/xiaomi && git clone https://github.com/vastolorde007/vendor_xiaomi
 
 echo 'Cloning Kernel tree'
 # Kernel Tree
-rm -rf kernel/xiaomi/mido && git clone https://github.com/vastolorde007/kernel_mido.git kernel/xiaomi/mido
+rm -rf kernel/xiaomi/mido && git clone https://github.com/Nicklas373/kernel_xiaomi_msm8953-4.9.git kernel/xiaomi/mido
 
 echo 'Cloning Custom clang'
 # Proton Clang
@@ -14,7 +14,9 @@ git clone https://github.com/vastolorde007/proton-clang.git --depth=1 prebuilts/
 
 echo 'Cloning bluetooth packages'
 # Bluetooth package for BT calling
-rm -rf packages/modules/Bluetooth && git clone https://github.com/zeelog/packages_modules_Bluetooth.git packages/modules/Bluetooth
+cd packages/modules/Bluetooth
+
+git fetch https://github.com/vastolorde007/packages_modules_Bluetooth.git && git cherry-pick 6a8588c0db76c9acec103ce6292d186063a97335
 
 echo 'Cloning radio packages'
 # Aosp FM
