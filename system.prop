@@ -141,7 +141,6 @@ persist.backup.ntpServer=0.pool.ntp.org
 persist.timed.enable=true
 
 # Telephony
-DEVICE_PROVISIONED=1
 persist.rild.nitz_long_ons_0=
 persist.rild.nitz_long_ons_1=
 persist.rild.nitz_long_ons_2=
