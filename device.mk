@@ -212,9 +212,8 @@ PRODUCT_PACKAGES += \
 
 # FM
 PRODUCT_PACKAGES += \
-    FMRadio \
-    libfmjni \
-    fm-commonsys 
+    RevampedFMRadio \
+    libqcomfmjni:64
 
 #Gallery2
 PRODUCT_PACKAGES += \
