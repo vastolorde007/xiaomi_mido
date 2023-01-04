@@ -21,6 +21,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/mido/device.mk)
 
+# Inherit-GAPPS
+$(call inherit-product, vendor/gapps/common/common-vendor.mk)
+
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
