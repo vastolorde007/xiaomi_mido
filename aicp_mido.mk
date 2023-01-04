@@ -22,33 +22,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/mido/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
-PRODUCT_NAME := lineage_mido
+PRODUCT_NAME := aicp_mido
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 4
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 BOARD_VENDOR := Xiaomi
-
-#RiceDroid Officical Flag
-RICE_DEVICE := mido
-RICE_OFFICIAL := true
-
-#RiceDroid Flags
-RICE_MAINTAINER := Vastolorde
-WITH_GMS := true
-#TARGET_CORE_GMS := true
-#TARGET_CORE_GMS_EXTRAS := true
-TARGET_ENABLE_BLUR := true
-TARGET_HAS_UDFPS := false
-TARGET_SUPPORTS_QUICK_TAP := false
-TARGET_FACE_UNLOCK_SUPPORTED := true
-SUSHI_BOOTANIMATION := 1080
-TARGET_OPTOUT_GOOGLE_TELEPHONY := true
-TARGET_USE_PIXEL_FINGERPRINT := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
