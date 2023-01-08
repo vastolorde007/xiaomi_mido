@@ -39,3 +39,5 @@ set_prop(gx_fpd, vendor_fp_prop)
 
 # Ignore all logging requests
 dontaudit gx_fpd storage_file:dir search;
+
+allow gx_fpd default_prop:file { getattr  open  read };

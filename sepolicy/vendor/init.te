@@ -1,3 +1,4 @@
+allow init sysfs:file { open  write };
 allow init self:capability sys_nice;
 
 # Allow init to bind mount gps_debug.conf
