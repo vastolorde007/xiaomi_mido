@@ -6,7 +6,7 @@ rm -rf vendor/xiaomi && git clone https://github.com/vastolorde007/vendor_xiaomi
 
 echo 'Cloning Kernel tree'
 # Kernel Tree
-rm -rf kernel/xiaomi/mido && git clone https://github.com/Nicklas373/kernel_xiaomi_msm8953-4.9.git kernel/xiaomi/mido
+rm -rf kernel/xiaomi/mido && git clone https://github.com/zeelog/android_kernel_xiaomi_mido.git kernel/xiaomi/mido
 
 echo 'Cloning Custom clang'
 # Proton Clang
@@ -18,13 +18,12 @@ cd packages/modules/Bluetooth
 
 git fetch https://github.com/vastolorde007/packages_modules_Bluetooth.git && git cherry-pick 6a8588c0db76c9acec103ce6292d186063a97335
 
+# Going back to source directory
 cd ../../..
 
 echo 'Cloning radio packages'
-# Aosp FM
-rm -rf vendor/qcom/opensource/fm-commonsys && git clone https://github.com/LineageOS/android_vendor_qcom_opensource_fm-commonsys.git vendor/qcom/opensource/fm-commonsys
-rm -rf packages/apps/FMRadio && git clone https://github.com/LineageOS/android_packages_apps_FMRadio.git packages/apps/FMRadio
-rm -rf vendor/qcom/opensource/libfmjni && git clone https://github.com/LineageOS/android_vendor_qcom_opensource_libfmjni.git vendor/qcom/opensource/libfmjni
+# Revamped FM
+git clone --depth=1 -b qcom https://github.com/iusmac/RevampedFMRadio.git
 
 echo 'Cloning lineage OS Gallery'
 rm -rf packages/apps/Gallery && git clone https://github.com/LineageOS/android_packages_apps_Gallery2.git -b lineage-20.0 packages/apps/Gallery2
