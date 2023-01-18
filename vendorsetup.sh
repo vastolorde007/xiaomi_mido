@@ -18,6 +18,8 @@ cd packages/modules/Bluetooth
 
 git fetch https://github.com/vastolorde007/packages_modules_Bluetooth.git && git cherry-pick 6a8588c0db76c9acec103ce6292d186063a97335
 
+cd ../../..
+
 echo 'Cloning radio packages'
 # Aosp FM
 rm -rf vendor/qcom/opensource/fm-commonsys && git clone https://github.com/LineageOS/android_vendor_qcom_opensource_fm-commonsys.git vendor/qcom/opensource/fm-commonsys
