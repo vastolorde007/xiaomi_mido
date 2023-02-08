@@ -6,20 +6,11 @@ rm -rf vendor/xiaomi && git clone https://github.com/vastolorde007/vendor_xiaomi
 
 echo 'Cloning Kernel tree'
 # Kernel Tree
-rm -rf kernel/xiaomi/mido && git clone https://github.com/zeelog/android_kernel_xiaomi_mido.git kernel/xiaomi/mido
+rm -rf kernel/xiaomi/mido && git clone https://github.com/vastolorde007/kernel_mido.git kernel/xiaomi/mido
 
 echo 'Cloning Custom clang'
 # Proton Clang
 git clone https://github.com/vastolorde007/proton-clang.git --depth=1 prebuilts/clang/host/linux-x86/clang-proton
-
-echo 'Cloning bluetooth packages'
-# Bluetooth package for BT calling
-cd packages/modules/Bluetooth
-
-git fetch https://github.com/vastolorde007/packages_modules_Bluetooth.git && git cherry-pick 6a8588c0db76c9acec103ce6292d186063a97335
-
-# Going back to source directory
-cd ../../..
 
 echo 'Cloning radio packages'
 # Revamped FM
