@@ -12,6 +12,9 @@ echo 'Cloning Custom clang'
 # Proton Clang
 git clone https://github.com/vastolorde007/proton-clang.git --depth=1 prebuilts/clang/host/linux-x86/clang-proton
 
+echo 'Cloning Bluetooth repo'
+rm -rf packages/modules/Bluetooth && git clone https://github.com/vastolorde007/packages_modules_Bluetooth.git packages/modules/Bluetooth
+
 echo 'Cloning radio packages'
 # Revamped FM
 git clone --depth=1 -b qcom https://github.com/iusmac/RevampedFMRadio.git
