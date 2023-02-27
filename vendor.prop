@@ -58,6 +58,7 @@ vendor.audio.feature.wsa.enable=true
 bluetooth.le.disable_apcf_extended_features=1
 
 # Bluetooth
+bluetooth.sco.disable_enhanced_connection=1
 persist.vendor.qcom.bluetooth.soc=pronto
 persist.vendor.qcom.bluetooth.enable.splita2dp=false
 ro.vendor.bluetooth.wipower=false
