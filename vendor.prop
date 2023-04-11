@@ -110,6 +110,9 @@ drm.service.enabled=true
 # Frp
 ro.frp.pst=/dev/block/bootdevice/by-name/config
 
+# Hwui
+ro.hwui.render_ahead=20
+
 # Media
 debug.stagefright.omx_default_rank=0
 vendor.vidc.disable.split.mode=1
