@@ -35,13 +35,13 @@ BOARD_VENDOR := Xiaomi
 
 #RiceDroid Officical Flag
 RICE_DEVICE := mido
-RICE_OFFICIAL := true
+RISING_OFFICIAL := true
 
 #RiceDroid Flags
-RICE_MAINTAINER := Vastolorde
-#WITH_GMS := true
-#TARGET_CORE_GMS := true
-#TARGET_CORE_GMS_EXTRAS := true
+RISING_MAINTAINER := Vastolorde
+WITH_GMS := false
+TARGET_CORE_GMS := false
+TARGET_CORE_GMS_EXTRAS := false
 TARGET_ENABLE_BLUR := true
 TARGET_HAS_UDFPS := false
 TARGET_SUPPORTS_QUICK_TAP := false
